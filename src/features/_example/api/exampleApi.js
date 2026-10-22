@@ -8,7 +8,8 @@ const BASE_PATH = "/items";
 export const exampleApi = {
   getItems: async () => (await http.get(BASE_PATH)).data,
   createItem: async (payload) => (await http.post(BASE_PATH, payload)).data,
-  updateItem: async (id, payload) =>
-    (await http.put(`${BASE_PATH}/${id}`, payload)).data,
+  // PATCH: only the changed fields are sent (e.g. { done: true }).
+  updateItem: async (id, changes) =>
+    (await http.patch(`${BASE_PATH}/${id}`, changes)).data,
   deleteItem: async (id) => (await http.delete(`${BASE_PATH}/${id}`)).data,
 };
