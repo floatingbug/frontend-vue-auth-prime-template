@@ -1,0 +1,13 @@
+/* Semantic color tokens. Components use these, never raw color values.
+   They point to PrimeVue's CSS variables, so dark mode works automatically. */
+
+:root {
+  --color-text: var(--p-text-color);
+  --color-text-muted: var(--p-text-muted-color);
+  --color-border: var(--p-content-border-color);
+  --color-primary: var(--p-primary-color);
+  --color-primary-contrast: var(--p-primary-contrast-color);
+  --color-surface-hover: var(--p-content-hover-background);
+
+  --opacity-muted: 0.6;
+}

@@ -1,0 +1,10 @@
+/* Entry point of all global styles. Imported once in src/main.js.
+   Only @import lines belong here. Order matters: tokens first, then base. */
+
+@import "./tokens/colors.css";
+@import "./tokens/spacing.css";
+@import "./tokens/typography.css";
+@import "./tokens/layout.css";
+
+@import "./base/reset.css";
+@import "./base/global.css";

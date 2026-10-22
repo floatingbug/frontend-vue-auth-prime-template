@@ -1,0 +1,12 @@
+/* Layout tokens: content widths, border radius, stacking order. */
+:root {
+  --content-width-form: 24rem;
+  --content-width-narrow: 40rem;
+  --content-width-wide: 72rem;
+
+  --radius: var(--p-content-border-radius);
+
+  --z-sticky: 100;
+  --z-overlay: 1000;
+  --z-modal: 1100;
+}
